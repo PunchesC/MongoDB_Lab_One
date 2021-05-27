@@ -46,7 +46,7 @@ db.people.replaceOne(
 db.people.deleteOne({first_name:"Wanda", 
 last_name: "Bowman"});
 
-8.//MISSING ONE?????
+8.
 db.people.deleteMany({email:null})
 
 9.
@@ -66,6 +66,6 @@ db.submissions.updateOne({title:"The River Bend"},
 
 11.
 db.submissions.updateMany(
-  {upvotes: {$gt: 10}},
+  {upvotes: {$gte: 10}},
   {$set:{round2:true}}
 );

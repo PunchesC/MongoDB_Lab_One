@@ -46,17 +46,7 @@ db.people.find(
   {first_name:true,
   last_name:true}
 )
-  
-  
-  
-  
-//   { $and:[
-//   {age: { $lt : 30}},
-//   {first_name:{$exists: true}},
-//   {last_name:{$exists: true}}
-// ]
-// } 
-// )
+
 
 12.
 db.people.find({ $and:[
